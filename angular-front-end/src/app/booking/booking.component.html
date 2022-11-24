@@ -1,0 +1,150 @@
+<app-header></app-header>
+  <html>    
+    <div class="container" style="margin-top: 8em;">        
+        <form [formGroup]="formValue">
+            <br>
+          <div class="row">
+            <div class="col-full" id="exampleModalLabel">
+              <h2 style= "margin-left: 100px;">BOOK YOUR SERVICE</h2><br>
+              <h4 id="exampleModalLabel">Select your Vehicle</h4><br>
+              <div class="input-group">
+                    <label class="choose" for="slct">
+                    <select for="exampleInputPassword1" formControlName="Vehicle" class="form-control" required="required" style= "border-color: black;">
+                      <option value="" disabled="disabled" selected="selected">Choose Vehicle Type</option>
+                      <option >Car</option>
+                      <option >Bike</option>
+
+                    </select>
+                    <svg>
+                      <use xlink:href="#select-arrow-down"></use>
+                    </svg>
+                  </label>
+                  <!-- SVG Sprites-->
+                  <svg class="sprites">
+                    <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                      <polyline points="1 1 5 5 9 1"></polyline>
+                    </symbol>
+                  </svg>
+            
+               
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <h4 >Select your vehicle Preference</h4>
+            <div class = 'body1'>
+              
+                <label class="choose" for="slct">
+                <select for="exampleInputPassword1" formControlName="Vehiclemanufacturer" class="form-control" required="required" style= "border-color: black;">
+                  <option value="" disabled="disabled" selected="selected">Choose Manufacturer</option>
+                  <option style= "color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;" disabled="disabled"> CAR </option>
+                  <option >BMW </option>
+                  <option >TOYOTA</option>
+                  <option >KIA </option>
+                  <option >TATA </option>
+                  <option style= "color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;" disabled="disabled"> BIKE </option>
+
+                  <option>DUCATI </option>
+                  <option >ROYAL ENFIELD </option>
+                  <option>KTM </option>
+                </select>
+                <svg>
+                  <use xlink:href="#select-arrow-down"></use>
+                </svg>
+              </label>
+              <!-- SVG Sprites-->
+              <svg class="sprites">
+                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                  <polyline points="1 1 5 5 9 1"></polyline>
+                </symbol>
+              </svg>
+            </div>
+            <!-- dpd-2 -->
+      
+            <div class = 'body2' >
+      
+              <label class="choose" for="slct" style="bottom: 32em;">
+                <select for="exampleInputPassword1" formControlName="Vehiclemodel" class="form-control" required="required" style="border-color: black;">
+                  <option value="" disabled="disabled" selected="selected">Choose Model</option>
+
+                  <option style= "color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;" disabled="disabled"> CAR </option>
+
+                  <option >BMW X1 / BMW X5 / BMW 5 SERIES / BMW 7 SERIES </option>
+                  <option >CAMRY / FORTUNER / PRIUS / COROLLA </option>
+                  <option >CARENS / CARNIVAL / SELTOS / SONET</option>
+                  <option >NEXON / TIAGO / HARRIER / SAFARI</option>
+
+                  <option style= "color: black; font-size: 25px; font-family: 'Times New Roman', Times, serif;" disabled="disabled"> BIKE </option>
+
+                  <option >PANIGALE V4 / SUPERSPORT / MONSTER BS6 / SCRAMBLER ICON</option>
+                  <option >CLASSIC  / HIMALAYAN / CONTINENTAL GT / INTERCEPTOR</option>
+                  <option > DUKE / DUKE / RC / ADVENTURE</option>
+                </select>
+                <svg>
+                  <use xlink:href="#select-arrow-down"></use>
+                </svg>
+              </label>
+              <!-- SVG Sprites-->
+              <svg class="sprites">
+                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                  <polyline points="1 1 5 5 9 1"></polyline>
+                </symbol>
+              </svg>
+            </div>
+            <h4 class="demo3" style="position: absolute;top:26em;">Details</h4>
+            <div class="input-group input-group-icon" style="bottom:62em; ">
+              <input formControlName="Mobilenum" class="form-control" id="exampleInputPassword1" type="text" placeholder="Mobile No" style = "border-color: black;"/>
+              <div class="input-icon"><i class="fa fa-user"></i></div>
+            </div>
+            <div class="input-group input-group-icon" style = "bottom:61em;">
+              <textarea  formControlName="Address" class="form-control" id="exampleInputPassword1" cols="40" rows="7" placeholder="Address" style="padding-left: 14%;border-color: black;"></textarea>
+              <div class="input-icon"><i class="fa fa-envelope"></i></div>
+            </div>
+          </div>
+      
+          <h4 class="demo" style="position:absolute;top: 40em;">Select your Fuel</h4>
+            <div class="input-group" style="bottom: 56em;">
+              <label class="choose" for="slct">
+                <select for="exampleInputPassword1" formControlName="Fueltype" class="form-control" required="required" style= "border-color: black;">
+                  <option value="" disabled="disabled" selected="selected">Choose Fuel Type</option>
+                  <option >Petrol</option>
+                  <option >Diesel</option>
+    
+                </select>
+                <svg>
+                  <use xlink:href="#select-arrow-down"></use>
+                </svg>
+              </label>
+              <!-- SVG Sprites-->
+              <svg class="sprites">
+                <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                  <polyline points="1 1 5 5 9 1"></polyline>
+                </symbol>
+              </svg>
+        
+            </div>
+            <h4 class="demo3" style="position: absolute;top:46em;">Select Your Date</h4>
+            <div class="input-group input-group-icon" style="bottom:53em; ">
+              <input formControlName="Servicedate" class="form-control"  id="exampleInputPassword1" type="date" style = "border-color: black;">
+            </div>
+            
+            <h4 class="demo2" style="position:absolute;top: 52em;">Terms and Conditions</h4>
+            <div class="input-group" style="bottom: 50em;">
+              <input id="terms" type="checkbox"/>
+              <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+            </div>
+
+            
+
+
+
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" (click)="postEmployeeDetails()" class="btn btn-primary">SUBMIT</button>
+      </div>
+
+ 
+  </html>

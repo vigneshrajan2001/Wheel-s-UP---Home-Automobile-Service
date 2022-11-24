@@ -1,0 +1,69 @@
+<div *ngIf="!registered"> 
+  <div class = "body2">
+  <input class="c-checkbox" type="checkbox" id="start">
+  <input class="c-checkbox" type="checkbox" id="progress2">
+  <input class="c-checkbox" type="checkbox" id="progress3">
+  <input class="c-checkbox" type="checkbox" id="finish">
+  <div class="c-form__progress"></div>
+  <div class="c-formContainer">
+  <div style="font-size: 40px; text-align: center;" for="end" class="c-welcome">Welcome aboard!<br> <a style="color: white; margin-top: 10px; font-size: smaller;"  routerLink="/login"> Already Registered? Click to Login !!</a>
+    <button (click)="signUp()" class="btn btn-primary mb-2" >Sign Up</button> 
+  </div>
+   
+    <form class="c-form">
+      
+      <div class="c-form__group">
+  
+      <label class="c-form__label" for="username">
+      <input
+       type="text"
+       id="fullname"
+       class="c-form__input"
+       placeholder=" "
+       pattern="([^\s][A-Za-z\s]+)"
+       required
+       [(ngModel)]="registration.fullname"
+       name="fullname">
+  
+      <label class="c-form__next" for="progress2" role="button">
+      <span class="c-form__nextIcon"></span>
+      </label>
+  
+        <span class="c-form__groupLabel">Create your username.</span>
+        <b class="c-form__border"></b>
+        </label>
+      </div>
+  
+      <div class="c-form__group">
+      
+      <label for="email" class="c-form__label" for="femail">
+      <input type="email" id="email" class="c-form__input" placeholder=" " pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required  [(ngModel)]="registration.email" name="email">
+  
+      <label class="c-form__next" for="progress3" role="button">
+      <span class="c-form__nextIcon"></span>
+      </label>
+  
+      <span class="c-form__groupLabel">What's your email?</span>
+      <b class="c-form__border"></b>
+      </label>
+      </div>
+  
+      <div class="c-form__group">
+        
+      <label  class="c-form__label" for="fpass">
+      <input  type="password" id="fpass" class="c-form__input" placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required  [(ngModel)]="registration.password" name="password">
+  
+      <label class="c-form__next" for="finish" role="button">
+      <span class="c-form__nextIcon" ></span>
+      </label>
+  
+      <span class="c-form__groupLabel">Create your password.</span>
+      <b class="c-form__border"></b>
+      </label>
+      </div>
+   <label class="c-form__toggle" for="start">Register<span class="c-form__toggleIcon"></span></label>
+  
+    </form>
+  </div>
+  </div>
+      </div>

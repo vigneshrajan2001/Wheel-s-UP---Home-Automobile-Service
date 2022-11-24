@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="col-md-6">
+    <h4 style="margin-top: 7em; text-align:right;">Booking List</h4>
+    <table style="border: 1px solid black;border-collapse: collapse;width: 200%; margin-top: 2em;">
+      <tr>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Vehicle</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Manufacturer</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Model</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Fuel Type</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Mobile Number</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Address</th>
+        <th style="border: 1px solid black;padding: 7px 10px 10px 10px;text-align: center;">Service Date</th>
+      </tr>
+    </table>
+
+      <li
+        class="list-group-item"
+        *ngFor="let booking of bookings; let i = index"
+      >
+    <table style="border: 1px solid black;border-collapse: collapse; width: 200%;">
+        <tr>
+        <td style="border: 1px solid black;text-align: center; " >{{ booking.Vehicle }}</td>
+        <td style="border: 1px solid black;text-align: center; " >{{ booking.Vehiclemanufacturer}}</td>
+        <td style="border: 1px solid black;" >{{ booking.Vehiclemodel}}</td>
+        <td style="border: 1px solid black;text-align: center;">{{booking.Fueltype}}</td>
+        <td style="border: 1px solid black; text-align: center;">{{booking.Mobilenum}}</td>
+        <td style="border: 1px solid black;">{{booking.Address}}</td>
+        <td style="border: 1px solid black;text-align: center;">{{booking.Servicedate}}</td>
+        </tr>
+    </table></li>
+</div>

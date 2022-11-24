@@ -1,0 +1,26 @@
+<div class = "body2">
+  <div class="container" onclick="onclick">
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <div class="center">
+          <div class="card">
+              <div class="text-center">
+                  <h2>Login </h2>
+              </div>
+        <form (ngSubmit)="login()">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email"   class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" required [(ngModel)]="email" name="email">
+            </div>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small><br>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" required [(ngModel)]="password" name="password">
+          </div>
+          <button style="margin-top: 10px; margin-left: 8px;" type="submit" class="btn btn-primary mb-2">&nbsp;Login</button>
+        </form>
+        <a style="color: rgb(36, 23, 221); margin-top: 10px; padding-left: 3em;" routerLink="/registration"> New user?Click to Signup !! </a>
+      </div>
+    </div>
+  </div>
